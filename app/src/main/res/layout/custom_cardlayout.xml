@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="15dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin_half"
+        android:layout_marginTop="@dimen/vertical_margin_half">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/toDoTextDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Name"
+                android:textColor="@color/primary_text"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/toDoTextNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Item Name"
+                android:textColor="@color/primary_text"
+                android:textSize="14dp"
+                android:layout_below="@+id/toDoTextDetails"
+                android:layout_alignLeft="@+id/toDoTextDetails"
+                android:layout_alignStart="@+id/toDoTextDetails" />
+            <TextView
+                android:id="@+id/toDoTextPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="item Pro"
+                android:textColor="@color/primary_text"
+                android:textSize="14dp"
+                android:layout_below="@+id/toDoTextDetails"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
